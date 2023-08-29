@@ -5,7 +5,7 @@
 # or DESCENDING; if (a[i] > a[j]) agrees with the direction,
 # then a[i] and a[j] are interchanged.*/
 def compAndSwap(a, i, j, dire):
-	if (dire==1 and a[i] > a[j]) or (dire==0 and a[i] > a[j]):
+	if (dire==1 and a[i] > a[j]) or (dire==0 and a[i] < a[j]):
 		a[i],a[j] = a[j],a[i]
 
 # It recursively sorts a bitonic sequence in ascending order,
